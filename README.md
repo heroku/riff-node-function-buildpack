@@ -1,3 +1,5 @@
+# This is a fork of the now inactive https://github.com/projectriff/node-function-buildpack
+
 # `node-function-buildpack`
 
 The Node Function Buildpack is a Cloud Native Buildpack V3 that provides the riff [Node Function Invoker](https://github.com/projectriff/node-function-invoker) to functions.
