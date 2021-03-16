@@ -15,10 +15,10 @@
 api = "0.5"
 
 [buildpack]
-id       = "projectriff/node-function"
+id       = "heroku/node-function-buildpack"
 name     = "riff NodeJS Function Buildpack"
-version  = "{{.version}}"
-homepage = "https://github.com/projectriff/node-function-buildpack"
+version  = "1.5.0"
+homepage = "https://github.com/heroku/riff-node-function-buildpack"
 
 [[stacks]]
 id = "heroku-20"
@@ -46,13 +46,12 @@ build       = true
 id      = "invoker"
 name    = "riff NodeJS Invoker"
 version = "0.3.0"
-uri     = "https://storage.googleapis.com/download/storage/v1/b/projectriff/o/node-function-invoker%2Freleases%2Fv0.3.0%2Fnode-function-invoker-0.3.0.tgz?generation=1589400159284258&alt=media"
-sha256  = "83d4f64137aed4199c97031856ddcddf46cb2e173d805b46240d54d036d83241"
+uri     = "https://heroku-build-artifacts.s3.us-east-2.amazonaws.com/streaming-http-adapter-buildpack/node-function-invoker_releases_v0.3.0_node-function-invoker-0.3.0.tar"
 stacks  = [ "heroku-18", "heroku-20", "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
-  uri  = "https://github.com/projectriff/node-function-invoker/blob/main/LICENSE"
+  uri  = "https://github.com/heroku/riff-node-function-invoker/blob/main/LICENSE"
 
 [metadata]
 pre-package   = "scripts/build.sh"

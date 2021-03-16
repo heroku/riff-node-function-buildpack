@@ -1,4 +1,4 @@
-module github.com/projectriff/node-function-buildpack
+module github.com/heroku/riff-node-function-buildpack
 
 go 1.15
 
@@ -10,3 +10,7 @@ require (
 	github.com/sclevine/spec v1.4.0
 	github.com/stretchr/testify v1.7.0
 )
+
+replace github.com/projectriff/node-function-buildpack v1.4.0 => github.com/heroku/riff-node-function-buildpack v1.4.0
+
+replace github.com/projectriff/node-function-buildpack v1.5.0 => github.com/heroku/riff-node-function-buildpack v1.5.0
